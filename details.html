@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORUS株式会社</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 2.0;
+            color: #000;
+            background: #fff;
+            padding: 80px 60px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        header {
+            margin-bottom: 80px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 25px;
+        }
+        
+        .back-link {
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .back-link a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+        }
+        
+        .back-link a:hover {
+            opacity: 0.7;
+        }
+        
+        section {
+            margin-bottom: 80px;
+            padding: 40px;
+            background: #fafafa;
+        }
+        
+        section:nth-child(even) {
+            background: #fff;
+        }
+        
+        h2 {
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 35px;
+            letter-spacing: -0.01em;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        .content-block {
+            font-size: 15px;
+            line-height: 2.0;
+            margin-bottom: 30px;
+        }
+        
+        .content-block:last-child {
+            margin-bottom: 0;
+        }
+        
+        .label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .highlight {
+            background: #fafafa;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-left: 1px solid #ddd;
+        }
+        
+        .message-box {
+            background: #fafafa;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #ddd;
+        }
+        
+        .message-box .title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .contact {
+            margin-top: 80px;
+            padding-top: 50px;
+            border-top: 2px solid #000;
+            background: none;
+        }
+        
+        .contact p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        /* PCではスマホ専用テキストを非表示 */
+        .mobile-only {
+            display: none;
+        }
+        
+        /* PCではPC用テキストを表示 */
+        .mobile-br-hide {
+            display: inline;
+        }
+        
+        /* スマホ対応 */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 20px;
+                line-height: 1.9;
+            }
+            
+            header {
+                margin-bottom: 50px;
+            }
+            
+            h1 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            
+            .back-link {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+            
+            h2 {
+                font-size: 20px;
+                margin-bottom: 25px;
+                padding-bottom: 8px;
+            }
+            
+            section {
+                margin-bottom: 50px;
+                padding: 30px 20px;
+            }
+            
+            .content-block {
+                font-size: 14px;
+                line-height: 1.9;
+                margin-bottom: 25px;
+            }
+            
+            .highlight {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            
+            .message-box {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .message-box .title {
+                font-size: 16px;
+            }
+            
+            .contact {
+                margin-top: 50px;
+                padding-top: 30px;
+            }
+            
+            .contact p {
+                font-size: 14px;
+            }
+            
+            /* スマホではスマホ専用テキストを表示 */
+            .mobile-only {
+                display: inline;
+            }
+            
+            /* スマホではPC用テキストを非表示 */
+            .mobile-br-hide {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="back-link">
+            <a href="index.html">← TOP</a>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h2>何を提供したいか</h2>
+            <div class="message-box">
+                <div class="content-block">
+                    知識不足による設計不良・過剰設計<br>
+                    低レベル施工図による手戻り、無駄な材料<br>
+                    技能の低下による施工不良<br>
+                    技能者不足<br>
+                    <span class="mobile-br-hide">これらを解決するため、AI・デジタル技術と熟練技能者の育成を両輪で推進する</span><span class="mobile-only">これらを解決するため<br>AI・デジタル技術の活用<br>熟練技能者の育成<br>2つを両輪で推進する</span><br>
+                    <span class="mobile-br-hide">低コスト・短納期・高品質を1つでも多く<br>
+                    良いプロジェクト、納品を1つでも多く</span><span class="mobile-only">低コスト・短納期・高品質<br>
+                    良いプロジェクト、納品を1つでも多く</span>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>AIでなにしてるか</h2>
+            <div class="content-block">
+                以下のAIツールで業務の移行を日々模索中<br>
+                <span class="mobile-br-hide">もう色々あって何が何だか…でも確実に進歩してます</span><span class="mobile-only">もう色々あって何が何だか…<br>でも確実に進歩してます</span><br>
+                <br>
+                設計思考・判断：GPT-4.1 / Claude<br>
+                ルール化・チェック：GPT + Python<br>
+                BIM/CAD自動化：Revit API / Dynamo<br>
+                調査・裏取り：Perplexity<br>
+                将来の自社AI：LLaMA系 Fine-tune
+            </div>
+        </section>
+        
+        <section>
+            <h2>技能者育成・ファーム</h2>
+            
+            <div class="content-block">
+                <span class="mobile-br-hide">これから施工側に大量に人員が流入してくる<br>
+                今までは職人と呼ばれた連中が占めている業界から<br>
+                真面目で品のあるサラリーマンのような人達が流入してくる</span><span class="mobile-only">これから施工側に大量に人員が流入してくる<br>今までは職人と呼ばれた連中が占めている<br>業界から真面目で品のある<br>サラリーマンのような人達が流入してくる</span><br>
+                <br>
+                その人達に<br>
+                適正な設計図・施工図・工事計画<br>
+                高度人材と一緒に仕事して肌で覚える<br>
+                高度人材から施工の正解と高品質の内容を知る<br>
+                AI+RAGで自己成長できるQ&A<br>
+                <br>
+                舐めた仕事している職人はこれからも仕事は無い<br>
+                職人や施工を舐めているゼネコンサブコンの仕事は誰もやらなくなる
+            </div>
+        </section>
+        
+        <section>
+            <h2>対応エリア</h2>
+            
+            <div class="content-block">
+                <span class="label">設計業務</span>
+                全国対応可能（フルリモート体制）
+            </div>
+            
+            <div class="content-block">
+                <span class="label">施工業務</span>
+                <span class="mobile-br-hide">関東一円（東京・神奈川・埼玉・千葉・茨城・栃木・群馬）<br>
+                その他エリアは協力会社ネットワークで対応可能（要相談）</span><span class="mobile-only">関東一円<br>東京・神奈川・埼玉・千葉・茨城・栃木・群馬<br>その他エリアも協力会社ネットワークで対応可能</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>対応可能なプロジェクト規模</h2>
+            
+            <div class="content-block">
+                <span class="label">設計業務</span>
+                延床面積：500㎡〜50,000㎡<br>
+                設計金額：50万円〜5,000万円
+            </div>
+            
+            <div class="content-block">
+                <span class="label">施工業務</span>
+                延床面積：300㎡〜30,000㎡<br>
+                <span class="mobile-br-hide">工事金額：50万円〜10億円　今年許認可取りますので💦<br>
+                （元請・下請ともに対応）</span><span class="mobile-only">工事金額：50万円〜10億円<br>今年許認可取りますので💦<br>元請・下請ともに対応</span>
+            </div>
+            
+            <div class="content-block">
+                <span class="mobile-br-hide">小規模案件から大規模プロジェクトまで幅広く対応可能です。<br>
+                デジタルツイン・3Dモデリングを活用した高品質な設計・施工図作成出来ます。<br>
+                面白い案件はお金も時間も採算度外視です。</span><span class="mobile-only">小規模案件から大規模プロジェクトまで<br>幅広く対応可能です。<br>デジタルツイン・3Dモデリングを活用した<br>設計・施工図作成出来ます。<br>面白い案件はお金も時間も採算度外視です。</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>レスポンス・納期</h2>
+            
+            <div class="content-block">
+                <span class="label">見積回答</span>
+                最短3営業日（簡易見積）<br>
+                詳細見積：5〜10営業日
+            </div>
+            
+            <div class="content-block">
+                <span class="label">協議対応</span>
+                全国リモート対応可能<br>
+                緊急の協議・相談にも柔軟に対応
+            </div>
+            
+            <div class="content-block">
+                <span class="label">設計納期</span>
+                基本設計：2週間〜1ヶ月<br>
+                実施設計：1ヶ月〜3ヶ月<br>
+                施工図：2週間〜2ヶ月<br>
+                （プロジェクト規模により変動）
+            </div>
+            
+            <div class="content-block">
+                <span class="mobile-br-hide">フルリモート体制により、従来よりも短納期での対応が可能です。<br>
+                急ぎの案件についてもご相談ください。</span><span class="mobile-only">フルリモート体制<br>従来よりも短納期対応可能<br>急ぎの案件対応します</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>実績数値</h2>
+            
+            <div class="content-block">
+                <span class="label">設計実績</span>
+                <span class="mobile-br-hide">35件<br>
+                内訳：新築15件、改修20件<br>
+                用途：オフィス、商業施設、工場、官公庁、集合住宅</span><span class="mobile-only">35件<br>新築15件、改修20件<br>オフィス、商業施設、工場、官公庁、集合住宅</span>
+            </div>
+            
+            <div class="content-block">
+                <span class="label">施工実績</span>
+                <span class="mobile-br-hide">28件<br>
+                内訳：機械+電気15件　機械のみ7件　電気のみ6件<br>
+                用途：オフィス、商業施設、工場、官公庁、米軍施設</span><span class="mobile-only">28件<br>機械+電気15件　機械のみ7件　電気のみ6件<br>オフィス、商業施設、工場、官公庁、米軍施設</span>
+            </div>
+            
+            <div class="content-block">
+                <span class="label">主な実績分野</span>
+                官公庁施設（庁舎、学校、体育館）<br>
+                商業施設（店舗、ショッピングセンター）<br>
+                工場・プラント（製造工場、食品工場、発電所）<br>
+                オフィスビル<br>
+                集合住宅（マンション、社宅）<br>
+                <span class="mobile-br-hide">医療・福祉施設　米軍施設（横田・座間・横須賀）</span><span class="mobile-only">医療・福祉施設<br>米軍施設（横田・座間・横須賀）</span>
+            </div>
+            
+            <div class="content-block">
+                <span class="label">協議対応実績</span>
+                消防協議：40件以上<br>
+                保健所協議（循環ろ過・厨房・簡易水道）：15件<br>
+                各種引込協議：年間多数
+            </div>
+        </section>
+        
+        <section>
+            <h2>品質管理体制</h2>
+            
+            <div class="content-block">
+                <span class="label">設計品質管理</span>
+                ・設計担当とチェック担当の最低二人体制<br>
+                ・AI技術計算による精度向上<br>
+                ・SSoT（Single Source of Truth）<br>
+                ・非同期業務による効率化とミス削減
+            </div>
+            
+            <div class="content-block">
+                <span class="label">施工品質管理</span>
+                ・着工前の3Dモデル施工図による干渉チェック<br>
+                ・適正なタイミングでの自主検査実施<br>
+                ・3Dスキャンによる竣工データ作成<br>
+                ・MEP技能者（機械・電気両方施工可能）
+            </div>
+            
+            <div class="content-block">
+                <span class="label">安全管理</span>
+                ・施工者への手厚い投資による技能向上<br>
+                ・安全を意識に定着させる<br>
+                ・施工者育成ファームによる人材育成
+            </div>
+        </section>
+        
+        <section>
+            <h2>協力体制</h2>
+            
+            <div class="content-block">
+                <span class="label">設計協力体制</span>
+                全国のフリーランス設計者ネットワーク：約50名<br>
+                専門分野別の協力設計事務所：15社<br>
+                積算専門協力会社：5社
+            </div>
+            
+            <div class="content-block">
+                <span class="label">施工協力体制</span>
+                設備施工協力会社：年商10億円規模　5社<br>
+                電気施工協力会社：年商7億円規模　3社<br>
+                自社施工者：15名（うちMEP技能者6名）
+            </div>
+        </section>
+        
+        
+        
+        <section>
+            <h2>お問い合わせ方法</h2>
+            
+            <div class="content-block">
+                <span class="label">メール</span>
+                <a href="mailto:fujii@torusjp.com" style="color: #000; text-decoration: none; border-bottom: 1px solid #000;">fujii@torusjp.com</a><br>
+                <br>
+                ・プロジェクト概要（用途、規模）<br>
+                ・希望業務内容（設計/施工/両方）<br>
+                ・所在地<br>
+                ・希望納期・着工時期<br>
+                ・その他特記事項
+            </div>
+            
+            <div class="content-block">
+                <span class="mobile-br-hide">新しい試み・新技術・将来性あるベンチャーの建築プロジェクトなどは採算度外視で対応します</span><span class="mobile-only">新しい試み・新技術・将来性あるベンチャーの<br>建築プロジェクトなどは採算度外視で対応</span>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="c
